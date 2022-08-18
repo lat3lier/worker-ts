@@ -1,0 +1,15 @@
+{
+  //"collectCoverageFrom": ["src/**/*.{ts,js}"],
+  //"coveragePathIgnorePatterns": ["src/index.ts"],
+  "testRegex": "/src/.*\\.(test|spec)\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)sx?$": "ts-jest"
+  },
+  "preset": "ts-jest",
+  "globals": {
+    "API_BASE": "https://json-server.jbeardst.one"
+  },
+  "verbose": true,
+  "testEnvironment": "wrangler"
+  // "testMatch": ["**/test/**/*.+(ts|tsx)", "**/src/**/(*.)+(spec|test).+(ts|tsx)"]
+}
